@@ -5,7 +5,7 @@ from helpers.config import get_settings
 
 app = FastAPI()
  
-@app.on_event("statup")
+@app.on_event("startup")
 async def strtup_db_client():
     settings = get_settings()
     
